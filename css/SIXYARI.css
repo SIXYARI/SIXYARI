@@ -11,11 +11,11 @@ header {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 20px;
-    align-items: end;
+    align-content: end;
 }
 
 .albums {
-    width: 100%;
+    width: 75%;
     height: auto;
     display: block;
 }
