@@ -1,0 +1,8 @@
+header {
+    background-image: none; 
+    /* Change later ^ */
+    background-color: black;
+    /* delete later ^ */
+    height: 200px;
+    width: 100%;
+}
