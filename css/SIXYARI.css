@@ -5,13 +5,15 @@ header {
     /* delete later ^ */
     height: 400px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #albums {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 20px;
-    align-content: end;
+    margin-top: auto;
 }
 
 .albums {
