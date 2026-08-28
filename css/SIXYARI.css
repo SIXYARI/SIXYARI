@@ -25,6 +25,14 @@ header {
     width: 150px;
     height: auto;
     display: block;
+    margin-bottom: 4.5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.albums:hover {
+    transform: scale(1.05);
+    transition-duration: 300ms;
 }
 
 .album a {
