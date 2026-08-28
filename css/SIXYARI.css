@@ -19,18 +19,12 @@ header {
 
 .album {
     position: relative;
-    perspective: 900px;
 }
 
 .albums {
     width: 150px;
     height: auto;
-    margin-bottom: 10px;
     display: block;
-
-    transform: scale(1) rotateX(0deg) rotateY(0deg);
-    transform-style: preserve-3d;
-    will-change: transform;
 }
 
 .album a {
