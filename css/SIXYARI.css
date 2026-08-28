@@ -21,21 +21,21 @@ header {
     width: 150px;
     height: auto;
     margin-bottom: 10px;
+    display: block;
+    transform: scale(1) rotateX(0deg) rotateY(0deg);
+    transition: transform 0.25s ease-out;
+    will-change: transform;
 }
 
 .album {
     position: relative;
+    perspective: 800px;
 }
 
 .album a {
     position: relative;
     z-index: 2;
     display: block;
-}
-
-.albums {
-    display: block;
-    transition: transform 0.4s ease;
 }
 
 .album-text {
@@ -49,14 +49,13 @@ header {
     font-size: 16px;
     font-weight: bold;
     transform: translateY(150px);
-    transition: transform 0.4s ease, z-index 0s 0.4s;
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .album:hover .albums {
-    transform: scale(1.05);
+    transform: scale(1.025);
 }
 
 .album:hover .album-text {
     transform: translateY(-30px);
-    z-index: 3;
 }
