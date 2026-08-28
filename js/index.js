@@ -1,4 +1,3 @@
-<script>
 document.querySelectorAll('.album').forEach(album => {
     const image = album.querySelector('.albums');
 
@@ -8,8 +7,6 @@ document.querySelectorAll('.album').forEach(album => {
     let currentRotateX = 0;
     let currentRotateY = 0;
 
-    let animationFrame;
-
     function animate() {
         currentRotateX += (targetRotateX - currentRotateX) * 0.1;
         currentRotateY += (targetRotateY - currentRotateY) * 0.1;
@@ -17,7 +14,7 @@ document.querySelectorAll('.album').forEach(album => {
         image.style.transform =
             `scale(1.025) rotateX(${currentRotateX}deg) rotateY(${currentRotateY}deg)`;
 
-        animationFrame = requestAnimationFrame(animate);
+        requestAnimationFrame(animate);
     }
 
     animate();
@@ -32,15 +29,8 @@ document.querySelectorAll('.album').forEach(album => {
         targetRotateX = y * -7;
     });
 
-    album.addEventListener('mouseenter', () => {
-        image.style.transition = 'none';
-    });
-
     album.addEventListener('mouseleave', () => {
         targetRotateX = 0;
         targetRotateY = 0;
-
-        image.style.transition = 'none';
     });
 });
-</script>
